@@ -24,7 +24,6 @@ Syntax highlighted code block
 **Bold** and _Italic_ and `Code` text
 
 [Link](url) and ![Image](src)
-
 ```
 
 For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
@@ -33,7 +32,7 @@ For more details see [GitHub Flavored Markdown](https://guides.github.com/featur
 
 Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/juva-b/juva-b.github.io/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
 
-[Cliquer ici] (http://www.bordeaux.fr/)
+[Cliquer ici](http://www.bordeaux.fr/)
 
 ### Support or Contact
 
