@@ -6,10 +6,15 @@
 
     <title>Los gringos</title>
 
+    <script src="//code.jquery.com/jquery.js"></script>
+    <script src="//cdn.rawgit.com/hilios/jQuery.countdown/2.2.0/dist/jquery.countdown.min.js"></script>
+
 </head>
 
 <body>
 
+   <span id="clock"></span>
+   
     <header>
 
         <h1>Qui sommes-nous ?</h1>
@@ -29,31 +34,40 @@
 
         <h4>Réalisation :</h4>
         <li>Mélanger la mozzarella râpée, les tomates hachées et le basilic dans un bol.</li>
-            <li>Pour garnir les empanadas, placer au milieu de chaque disque, 1 ou 2 cuillerées du mélange</li>
-            <li>Plier l’empanada et sceller les bords. Vous pouvez utiliser une fourchette ou les doigts pour faire l’ourlet créant ainsi un dessin du style churro. Vous pouvez aussi utiliser un moule à empanadas pour sceller les empanadas.</li>
-<li>Si vous avez le temps vous pouvez placer les empanadas crues 30 minutes au réfrigérateur, cela aura pour effet d’améliorer le scellement des empanadas et ainsi réduire les risques de fuites.</li>
-           <li>Avant de les enfourner, brosser les avec du jaune d’œuf pour leur donner un bel aspect doré lors de leurs cuisson.</li>
-           <li> Enfourner dans un four préchauffé à 200ºC pendant environ 18 à 20 minutes ou jusqu’à ce qu’elles soient dorées.</li>
-           <li> Servir avec votre choix de sauce pour mouiller.</li>
+        <li>Pour garnir les empanadas, placer au milieu de chaque disque, 1 ou 2 cuillerées du mélange</li>
+        <li>Plier l’empanada et sceller les bords. Vous pouvez utiliser une fourchette ou les doigts pour faire l’ourlet créant ainsi un dessin du style churro. Vous pouvez aussi utiliser un moule à empanadas pour sceller les empanadas.</li>
+        <li>Si vous avez le temps vous pouvez placer les empanadas crues 30 minutes au réfrigérateur, cela aura pour effet d’améliorer le scellement des empanadas et ainsi réduire les risques de fuites.</li>
+        <li>Avant de les enfourner, brosser les avec du jaune d’œuf pour leur donner un bel aspect doré lors de leurs cuisson.</li>
+        <li> Enfourner dans un four préchauffé à 200ºC pendant environ 18 à 20 minutes ou jusqu’à ce qu’elles soient dorées.</li>
+        <li> Servir avec votre choix de sauce pour mouiller.</li>
 
-   <h3>Donner votre avis</h3>
+        <h3>Donner votre avis</h3>
 
-<form>
- 
-  <fieldset> <input type="text" name="pseudo" size="30" maxlenght:"10" placeholder="Pseudo" required/>
-  
-  <br><br>
-  
-   <label>Votre message :</label><textarea rows="7" cols="63"> </textarea>
-  <br><br>
-  <input type="submit" value="Envoyer" /> </fieldset>
+        <form>
 
-  
-</form>
+            <fieldset> <input type="text" name="pseudo" size="30" maxlenght:"10" placeholder="Pseudo" required />
 
-   
+                <br><br>
+
+                <label>Votre message :</label><textarea rows="7" cols="63"> </textarea>
+                <br><br>
+                <input type="submit" value="Envoyer" /> </fieldset>
+
+
+        </form>
+
+
     </header>
-    
-    
 
-</body></html>
+    <script type="text/javascript">
+        // 15 days from now!
+        var date = new Date(new Date().valueOf() + 15 * 24 * 60 * 60 * 1000);
+        $('#clock').countdown(date, function(event) {
+            $(this).html(event.strftime('%D days %H:%M:%S'));
+        });
+
+    </script>
+
+</body>
+
+</html>
